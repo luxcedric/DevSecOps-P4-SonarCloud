@@ -1,5 +1,5 @@
 <?php
-require('../template/head.php');
+require_once('../template/head.php');
 $id = str_replace('"', '&quot;', $_GET['id']);
 $creditcard = $_GET['creditcard'];
 $creditcard = preg_replace('/([^\s])([A-Za-z\\"\\\'])/', '', $creditcard);
@@ -14,5 +14,5 @@ document.write("<!-- " + q + "-->");
 </script>
 END;
 
-require('../template/foot.php');
+require_once('../template/foot.php');
 ?>
