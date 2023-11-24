@@ -1,5 +1,5 @@
 <?php
-require('../template/head.php');
+require_once('../template/head.php');
 $q = $_GET['q'];
 
 print <<<END
@@ -11,5 +11,5 @@ Sorry, we could not find any results for:
 <script type="text/javascript">document.write(search_term);</script>
 END;
 
-require('../template/foot.php');
+require_once('../template/foot.php');
 ?>
