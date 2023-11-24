@@ -1,5 +1,5 @@
 <?php
-require('../template/head.php');
+require_once('../template/head.php');
 $user = $_GET['user'];
 
 print <<<END
@@ -22,5 +22,5 @@ print <<<END
 
 END;
 
-require('../template/foot.php');
+require_once('../template/foot.php');
 ?>
