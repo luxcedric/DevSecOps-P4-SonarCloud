@@ -2,7 +2,7 @@
 import html, http.client, http.server, io, json, os, pickle, random, re, socket, socketserver, sqlite3, string, sys, subprocess, time, traceback, urllib.parse, urllib.request, xml.etree.ElementTree  # Python 3 required
 try:
     import lxml.etree
-    parser = etree.XMLParser(resolve_entities=False, no_network=True)
+    parser = lxml.etree.XMLParser(resolve_entities=False, no_network=True)
 except ImportError:
     print("[!] please install 'python-lxml' to (also) get access to XML vulnerabilities (e.g. '%s')\n" % ("apt-get install python-lxml" if os.name != "nt" else "https://pypi.python.org/pypi/lxml"))
 
