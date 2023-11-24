@@ -466,7 +466,7 @@ function dvwaButtonSourceHtmlGet( $pId ) {
 
 
 // Database Management --
-
+$DBMS_errorFunc = "";
 if( $DBMS == 'MySQL' ) {
 	$DBMS = htmlspecialchars(strip_tags( $DBMS ));
 	$DBMS_errorFunc = 'mysqli_error()';
