@@ -488,6 +488,7 @@ else {
 //	</div>';
 
 function dvwaDatabaseConnect() {
+	$DBMS_errorFunc = "";
 	global $_DVWA;
 	global $DBMS;
 	//global $DBMS_connError;
