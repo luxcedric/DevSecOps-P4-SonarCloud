@@ -1,5 +1,5 @@
 <?php
-require('../template/head.php');
+require_once('../template/head.php');
 $q = $_GET['q'];
 
 print <<<END
@@ -10,5 +10,5 @@ Here are the results for $q:
 </ol>
 END;
 
-require('../template/foot.php');
+require_once('../template/foot.php');
 ?>
